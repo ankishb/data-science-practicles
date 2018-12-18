@@ -16,3 +16,28 @@
     #                any(axis=1)].shape
     users = users[(users[cols[0]]< (q3+1.5*iqr))]
     users = users[(users[cols[0]]>(q1-1.5*iqr))]
+
+
+
+## Merging array in the DataFrame
+        # convert array in the list first.
+        First make the list into a Series:
+        se = pd.Series(mylist)
+        
+        Then add the values to the DataFrame:
+        df['new_col'] = se.values
+
+
+## One-Hot Encoding
+        >>> a = np.array([1, 0, 3])
+        >>> b = np.zeros((3, 4))
+        >>> b[np.arange(3), a] = 1
+        >>> b
+        array([[ 0.,  1.,  0.,  0.],
+               [ 1.,  0.,  0.,  0.],
+               [ 0.,  0.,  0.,  1.]])
+               
+               
+        users = np.zeros((4,3345))
+        users[np.arange(4), temp[:,1].astype(int)[0]] = 1 
+        users
