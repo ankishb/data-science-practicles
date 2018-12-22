@@ -1,3 +1,5 @@
+## XGBOOST
+
 for xgboost here is my steps, usually i can reach almost good parameters in a few steps,
 
 initialize parameters such: eta = 0.1, depth= 10, subsample=1.0, minchildweight = 5, colsamplebytree = 0.2 (depends on feature size), set proper objective for the problem (reg:linear, reg:logistic or count:poisson for regression, binary:logistic or rank:pairwise for classification)
@@ -24,3 +26,22 @@ after these step you can get roughly good parameters (i dont claim best ones), t
 "minimum sum of instance weight(hessian) needed in a child. If the tree partition step results in a leaf node with the sum of instance weight less than min_child_weight, then the building process will give up further partitioning.
 
 Intuitively, this is the minimum number of samples that a node can represent in order to be split further. If there are fewer than min_child_weight samples at that node, the node becomes a leaf and is no longer split. This can help reduce the model complexity and prevent overfitting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
