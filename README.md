@@ -1,5 +1,13 @@
 # data-science-practicles
 
+## Imp key usage of padas
+
+[Link][https://jeffdelaney.me/blog/useful-snippets-in-pandas/]
+
+## Find the columns with half serached name
+unwanted = x.columns[x.columns.str.startswith('ps_calc_')]
+x.drop(unwanted,inplace=True,axis=1)
+
 ## pandas DataFrame
  DataFrame(data=None, index=None, columns=None, dtype=None)
 
